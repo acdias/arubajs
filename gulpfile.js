@@ -98,3 +98,32 @@ gulp.task('lint', function() {
 		// task chain definidtions
 		gulp.task('all', ['clean', 'test']);
 		gulp.task('default', ['all']);
+
+
+/**
+ * Define os nome dos arquivos e quais arquivos CSS serão minificados pelo gulp.
+ *
+ * @namespace patchCSS
+ *
+ */
+pathsCSS = {
+	main: {
+		name: 'main.css',
+		nameMin: 'main.min.css',
+		src: [
+			'wp-content/themes/grupoapi/assets/build/css/main.less',
+			'wp-content/themes/grupoapi/editor-style.css',
+		]
+	},
+	vendors: {
+		name: 'vendors.css',
+		nameMin: 'vendors.min.css',
+		src: [
+			'wp-content/themes/grupoapi/assets/build/css/bootstrap.css',
+			'wp-content/themes/grupoapi/assets/build/css/flaticon.css',
+			'wp-content/themes/grupoapi/assets/build/css/odometer-theme-minimal.css',
+			'wp-content/themes/grupoapi/assets/build/css/jquery.bxslider.css',
+			'wp-content/themes/grupoapi/assets/build/css/jquery-ui.css',
+		]
+	}
+}
