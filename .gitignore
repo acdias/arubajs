@@ -27,7 +27,7 @@ build/Release
 node_modules
 
 # Project pecifics
-build
+# build
 dist
 
 #app
